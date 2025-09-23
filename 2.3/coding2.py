@@ -14,3 +14,23 @@ Judge 4: 8.5
 Judge 5: 9
 Your Olympic score is 8.0
 """
+print("Judge 1's score:")
+j1 = float(input())
+
+print("Judge 2's score:")
+j2 = float(input())
+
+print("Judge 3's score:")
+j3 = float(input())
+
+print("Judge 4's score:")
+j4 = float(input())
+
+print("Judge 5's score:")
+j5 = float(input())
+
+total = float(j1) + float(j2) + float(j3) + float(j4) + float(j5)
+final = total / 5
+
+print(final)
+
