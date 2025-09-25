@@ -25,3 +25,28 @@ Would you like fries for $3? (Yes/No)
 > yes
 Your total is $3.42
 """
+
+total = 0
+
+print("Hi, would you like a burger for $5? (Yes/ No)")
+
+burger = input().lower().strip()
+
+if burger == "yes":
+    total += 5
+else:
+    total += 0
+
+print("Hi, would you like fries for $3? (Yes/ No)")
+
+fries = input().lower().strip()
+
+if fries == "yes":
+    total += 3
+else:
+    total += 0
+
+tax = int(total)*float(0.14)
+final = tax + int(total)
+
+print("Your total is $" + str(final) + " dollars.")
