@@ -1,5 +1,4 @@
 ID,Name,What is your favourite digit?,What is your favourite pet among these options?,What's your favourite subject?,What's your favourite sport (to play)?,What's your favourite sport (to watch)?,What genre of music do you enjoy most?,What is your favourite movie genre?,What's the best fast food nearby?
-20,Serene Lee,8,Cat,Math,Badminton,Volleyball,K-Pop,Fantasy/Sci-Fi,A&W
 1,Ethan Wong,0,Rabbit,Math,Hockey,Hockey,Classical,Fantasy/Sci-Fi,Bubble Waffle
 2,Leland Lei,6,Fish,Science,Football,Volleyball,Classical,Thriller/Mystery,Chipotle
 3,Derick Su,7,Fish,Social Studies,Badminton,Badminton,Classical,Fantasy/Sci-Fi,Bubble Waffle
@@ -19,6 +18,7 @@ ID,Name,What is your favourite digit?,What is your favourite pet among these opt
 17,Jacob Joe,1,Fish,Science,Badminton,Hockey,Rock,Adventure,Church's Chicken
 18,Barak Sun,6,Reptile,Science,Football,Basketball,Country,Thriller/Mystery,Chipotle
 19,Nguyen Doan,5,Reptile,Science,Badminton,Soccer,K-Pop,Thriller/Mystery,Starbucks
+20,Serene Lee,8,Cat,Math,Badminton,Volleyball,K-Pop,Fantasy/Sci-Fi,A&W
 21,Greysen Li,7,Rabbit,Science,Badminton,Hockey,Pop,Fantasy/Sci-Fi,Chipotle
 22,Erisha Rahman,0,Bird,Fine Arts,Volleyball,Volleyball,Rock,Comedy,Bubble Waffle
 23,Bella Gu,8,Rabbit,Science,Badminton,Volleyball,Hip-hop,Horror,Bubble Waffle
