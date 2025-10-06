@@ -6,25 +6,30 @@ You must use user input to add interactivity to the program.
 You must design your algorithm in English first, then translate it to Python code.
 Test as you go! Describe in your comments what steps you took to test your code.
 """
+#open up the file who contains the information
 file = open('2.4/responses.csv')
+#junk the first usless line
 junk = file.readline()
 
+#Ask user for their name
 print("Please input your name for us to search up your information in the database.")
- 
+
 name = input()
 
+#find user's name in the database
 for line in file:
     if name in line:
         my_favourites = line.strip().split(",")
 
+#variables
 top_friend = ""
 top_score = 0
 their_favs = ""
 their_name = ""
 
-file = open('2.4/responses.csv')
 # get everyone's favourite
-
+file = open('2.4/responses.csv')
+# people who has simular with user gets score +1
 for line in file:
     score = 0
     their_favs = line.strip().split(",")
@@ -47,15 +52,12 @@ for line in file:
     # ppl's name
     their_name = their_favs[1]
 
-    # see who's favourite matches user the most
-    #for faves in my_favourites:
-        #if faves in their_favs:
-            #score += 1
+    # exclude user's own name
     if their_name == my_favourites[1]:
         score = 0
-
+    # see who's favourite matches user the most
     if score > top_score:
         top_friend = their_name
         top_score = score
-
+#show user who has the most simular data with them
 print(top_friend)
