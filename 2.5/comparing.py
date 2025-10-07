@@ -12,6 +12,7 @@ file = open('2.4/responses.csv')
 junk = file.readline()
 
 #Ask user for their name
+#TEST CASE(input): Serene Lee
 print("Please input your name for us to search up your information in the database.")
 
 name = input()
@@ -60,4 +61,24 @@ for line in file:
         top_friend = their_name
         top_score = score
 #show user who has the most simular data with them
-print(top_friend)
+#TEST CASE(output):Your bestfriend is Brendan Yap.
+print("Your bestfriend is "+ top_friend + ".")
+
+#user's interaction for more data
+#TEST CASE(input): 67
+print("Type in '67' to see how many simular data you both have.")
+
+code = input()
+
+#TEST CASE(5 Simular data): You guys have 4-5 simular data.
+if code == "67":
+    if score == 4 or score == 5:
+        print("You guys have 4-5 simular data.")
+    elif score == 6 or score == 7:
+        print("You guys have 6-7 simular data.")
+    elif score >= 8:
+        print("YOU GUYS HAVE MOST OF THE DATA SIMULAR!")
+    elif score <= 3:
+        print("Hmm..you guys have about 0-3 simular datas.")
+else:
+    print("This code is incorrect.")
