@@ -72,12 +72,12 @@ print("Your bestfriend is "+ top_friend + ".")
 
 #user's interaction for more data
 #TEST CASE(input): 67
-print("Type in '67' to see how many simular data you both have.")
+print("Type in 'i love computer science' to see how many simular data you both have.")
 code = input()
 
 #TEST CASE(5 Simular data): You guys have 4-5 simular data.
 #TEST CASE(negative): This code is incorrect
-if code == "67":
+if code == "i love computer science":
     if score == 4 or score == 5:
         print("You guys have 4-5 simular data.")
     elif score == 6 or score == 7:
