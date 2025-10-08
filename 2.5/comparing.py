@@ -14,13 +14,19 @@ junk = file.readline()
 #Ask user for their name
 #TEST CASE(input): Serene Lee
 print("Please input your name for us to search up your information in the database.")
-
-name = input()
+name = input().strip()
 
 #find user's name in the database
+#TEST CASE(negative input): Your name is not in the database.
+name_found = False
 for line in file:
     if name in line:
+        name_found = True
         my_favourites = line.strip().split(",")
+
+if name_found == False:
+    print("Your name is not in the database.")
+    quit()
 
 #variables
 top_friend = ""
@@ -67,10 +73,10 @@ print("Your bestfriend is "+ top_friend + ".")
 #user's interaction for more data
 #TEST CASE(input): 67
 print("Type in '67' to see how many simular data you both have.")
-
 code = input()
 
 #TEST CASE(5 Simular data): You guys have 4-5 simular data.
+#TEST CASE(negative): This code is incorrect
 if code == "67":
     if score == 4 or score == 5:
         print("You guys have 4-5 simular data.")
@@ -79,6 +85,6 @@ if code == "67":
     elif score >= 8:
         print("YOU GUYS HAVE MOST OF THE DATA SIMULAR!")
     elif score <= 3:
-        print("Hmm..you guys have about 0-3 simular datas.")
+        print("Hmm..you guys only have about 0-3 simular datas.")
 else:
     print("This code is incorrect.")
