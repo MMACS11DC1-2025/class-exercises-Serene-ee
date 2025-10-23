@@ -21,13 +21,13 @@ while True:
             
             t.goto(-50, 70)
             t.stamp()
-            t.goto(-30, 70)
+            t.goto(-30, 60)
             t.stamp()
-            t.goto(-10, 70)
+            t.goto(-10, 50)
             t.stamp()
-            t.goto(10, 70)
+            t.goto(10, 50)
             t.stamp()
-            t.goto(30, 70)
+            t.goto(30, 60)
             t.stamp()
             t.goto(50, 70)
             t.stamp()
@@ -36,3 +36,5 @@ while True:
         break
 
 smile(0, 0)
+smile(100, 110)
+smile(250, 100)
