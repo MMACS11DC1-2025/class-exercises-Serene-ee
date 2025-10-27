@@ -16,7 +16,7 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 4. **Return Values**: Demonstrate understanding of the 'return' statement and recursion by being able to report the total number of recursive calls made
 5. **User Interaction**: Include at least one user input to dynamically generate your graphics
 6. **Documentation**: Complete a README.md file with testing and process explanation
-7. **Peer Review**: Peer feedback to improve quality of work
+7. **Peer Review**: Peer feedback to improve quality of work (salami)
 
 ## "Gotta Have" Checklist
 
@@ -54,7 +54,7 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 - [ ] Source code is committed to repository on Github with **at least 3 meaningful commits on different days** (2 pts)
 
 ### **Peer Review**
-- [ ] Peer review completed with classmate. Feedback on code quality, approach, and any debugging techniques used are documented in README (2 pts)
+- [ ] Peer review completed with classmate. Feedback on code quality, approach, and any debugging techniques used are documented in README (2 pts) (salami)
 
 ## **ADVANCED CRITERIA** (1 point each)
 
