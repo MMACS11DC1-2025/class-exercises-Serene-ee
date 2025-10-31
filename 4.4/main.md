@@ -34,3 +34,41 @@ turtle.width(3)
 turtle.shape("triangle")
 
 draw_tree(2, 120)
+
+####
+
+import turtle
+
+t = turtle.Turtle()
+
+print("Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!")
+start = input().lower().strip()
+
+if start == "start":
+  for i in range(70):
+  	t.forward(5+i)
+  	t.right(15)
+    
+t.goto(5)
+t.penup()
+turtle.done()
+
+def draw_pattern(x, y):
+  t.penup()
+  t.goto(30 + x, 30 + y)
+  t.stamp()
+  
+  t.penup()
+  t.goto(50 + x, 10 + y)
+  t.stamp()
+  
+  t.penup()
+  t.goto(70 + x, 30 + y)
+  t.stamp()
+
+draw_pattern(-80,100)
+draw_pattern(-10,100)
+draw_pattern(40,60)
+draw_pattern(90,40)
+draw_pattern(120,20)
+draw_pattern(140,0)

@@ -1,7 +1,7 @@
 # Guess number bot
 # Serene Lee
 # Oct 28th, 2025
-
+'''
 import random
 
 num = random.choice(range(101))
@@ -30,3 +30,10 @@ while num1 != num:
     num1 = int(input())
 
 print("You have guessed the right number! It took you " + str(guess_count) + " times to guess it.")
+'''
+
+# Name Modifier bot
+# Serene Lee
+# Oct 31, 2025
+
+print("I am a name modifier bot, please")
