@@ -1,8 +1,7 @@
 import turtle
 t = turtle.Turtle()
 
-print("Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!")
-start = input().lower().strip()
+start = input("Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!").lower().strip()
 
 if start == "start":
   for i in range(70):
@@ -41,9 +40,12 @@ draw_pattern(-260,60)
 draw_pattern(-235,130)
 import turtle
 tur = turtle.Turtle()
+
+color = input("It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)").lower().strip()
+
 def draw_treepattern(level, branch_length):
   
-  seasontheme =	{"autumn":"#FFB533", "spring":"#FCB3F5", "summer":"#12C517", "winter":"#BFF5F5"}
+  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
   if level > 0:
     tur.forward(branch_length)
     tur.left(40)
@@ -55,7 +57,7 @@ def draw_treepattern(level, branch_length):
     tur.left(40)
     tur.back(branch_length)
   else:  
-    tur.color(seasontheme["spring"])
+    tur.color(seasontheme[color])
     tur.stamp()
     tur.color("brown")
     
