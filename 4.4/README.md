@@ -1,4 +1,8 @@
-
+'''
+This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like.
+After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the
+code will draw the trees with the picked color from the user at the bottom left and the bottom right.
+'''
 import turtle
 t = turtle.Turtle()
 t.speed(10)
@@ -18,7 +22,7 @@ color = input("It time to put in some patterns! What color would You like the pa
 
 
 def draw_pattern(x, y):
-    seasontheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
+    seasontheme =   {"orange":"#FFB533", "pink":"#FF73C3", "green":"#12C517", "blue":"#4CC9F0"}
     t.color(seasontheme[color])
     
     t.penup()
