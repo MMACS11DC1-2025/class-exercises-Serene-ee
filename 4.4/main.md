@@ -17,7 +17,7 @@ color = input("It time to put in some patterns! What color would You like the pa
 
 
 def draw_pattern(x, y):
-    seasontheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
+    seasontheme =   {"orange":"#FFB533", "pink":"#FF73C3", "green":"#12C517", "blue":"#4CC9F0"}
     t.color(seasontheme[color])
     
     t.penup()
