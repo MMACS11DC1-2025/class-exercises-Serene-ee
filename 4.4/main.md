@@ -12,7 +12,13 @@ t.goto(5)
 t.penup()
 turtle.done()
 
+color = input("It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)").lower().strip()
+
+
 def draw_pattern(x, y):
+  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
+  t.color(seasontheme[color])
+  
   t.penup()
   t.goto(30 + x, 40 + y)
   t.stamp()
@@ -25,6 +31,12 @@ def draw_pattern(x, y):
   t.goto(90 + x, 40 + y)
   t.stamp()
 
+draw_pattern(-15, 5)
+draw_pattern(15, -65)
+draw_pattern(-20, -140)
+draw_pattern(-140, -145)
+draw_pattern(-200, -55)
+draw_pattern(-170, 40)
 draw_pattern(-70,105)
 draw_pattern(45,70)
 draw_pattern(100,-5)
@@ -41,11 +53,7 @@ draw_pattern(-235,130)
 import turtle
 tur = turtle.Turtle()
 
-color = input("It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)").lower().strip()
-
 def draw_treepattern(level, branch_length):
-  
-  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
   if level > 0:
     tur.forward(branch_length)
     tur.left(40)
@@ -56,8 +64,8 @@ def draw_treepattern(level, branch_length):
     
     tur.left(40)
     tur.back(branch_length)
-  else:  
-    tur.color(seasontheme[color])
+    
+  else:
     tur.stamp()
     tur.color("brown")
     
