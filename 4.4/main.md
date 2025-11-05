@@ -68,16 +68,21 @@ def draw_treepattern(level, branch_length):
     tur.back(branch_length)
     
   else:
+    tur.color("green")
     tur.stamp()
     tur.color("brown")
     
-tur.penup()
-tur.goto(-20, -70)
-tur.left(90)
-tur.pendown()
+def tree_location(x, y, length, depth):
+    tur.penup()
+    tur.goto(x, y)
+    tur.setheading(90) 
+    tur.pendown()
 
-tur.color("brown")
-tur.width(3)
-tur.shape("triangle")
+    tur.color("brown")
+    tur.width(3)
+    tur.shape("triangle")
+    
+    draw_treepattern(depth, length)
 
-draw_treepattern(4, 30)
+tree_location(-150, -330, 80, 5) 
+tree_location(150, -330, 80, 5)
