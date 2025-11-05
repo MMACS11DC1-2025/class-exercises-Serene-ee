@@ -25,9 +25,9 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 ### **Core Programming Concepts**
 - [g ] At least one recursive function defined with proper parameters (2 pts)
 - [g ] Proper base case implemented to stop recursion (2 pts)
-- [ ] Recursive calls reduce problem size toward base case (2 pts)
+- [g ] Recursive calls reduce problem size toward base case (2 pts)
 - [ ] Function returns meaningful values (not just drawing) (2 pts)
-- [ ] At least one user input to dynamically generate graphics (2 pts)
+- [g ] At least one user input to dynamically generate graphics (2 pts)
 - [ ] Program prints the total count of recursive function calls executed (2 pts)
 
 ### **Data Structures & Organization**
@@ -59,9 +59,9 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 ## **ADVANCED CRITERIA** (1 point each)
 
 ### **Advanced Features**
-- [ ] More complex or creative use of recursion (this may include: multiple base cases, multiple recursive calls, or multiple recursive functions) (1 pt)
-- [ ] Advanced user inputs and error checking (1 pt)
-- [ ] Sophisticated return value usage beyond basic requirement (1 pt)
+- [g ] More complex or creative use of recursion (this may include: multiple base cases, multiple recursive calls, or multiple recursive functions) (1 pt)
+- [ g] Advanced user inputs and error checking (1 pt)
+- [ g] Sophisticated return value usage beyond basic requirement (1 pt)
 
 ### **Creative & Process Elements**
 - [ ] Unique visual patterns or creative approaches (1 pt)
