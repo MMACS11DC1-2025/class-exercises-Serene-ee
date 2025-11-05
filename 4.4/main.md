@@ -31,6 +31,8 @@ def draw_pattern(x, y):
   t.goto(90 + x, 40 + y)
   t.stamp()
 
+draw_pattern(-80, -80)
+draw_pattern(-110, -20)
 draw_pattern(-15, 5)
 draw_pattern(15, -65)
 draw_pattern(-20, -140)
