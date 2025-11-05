@@ -1,13 +1,14 @@
 import turtle
 t = turtle.Turtle()
+t.speed(10)
 
 start = input("Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!").lower().strip()
 
 if start == "start":
-  for i in range(70):
-  	t.forward(5+i)
-  	t.right(15)
-    
+    for i in range(70):
+        t.forward(5+i)
+        t.right(15)
+        
 t.goto(5)
 t.penup()
 turtle.done()
@@ -16,20 +17,20 @@ color = input("It time to put in some patterns! What color would You like the pa
 
 
 def draw_pattern(x, y):
-  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
-  t.color(seasontheme[color])
-  
-  t.penup()
-  t.goto(30 + x, 40 + y)
-  t.stamp()
-  
-  t.penup()
-  t.goto(60 + x, 10 + y)
-  t.stamp()
-  
-  t.penup()
-  t.goto(90 + x, 40 + y)
-  t.stamp()
+    seasontheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
+    t.color(seasontheme[color])
+    
+    t.penup()
+    t.goto(30 + x, 40 + y)
+    t.stamp()
+    
+    t.penup()
+    t.goto(60 + x, 10 + y)
+    t.stamp()
+    
+    t.penup()
+    t.goto(90 + x, 40 + y)
+    t.stamp()
 
 draw_pattern(-80, -80)
 draw_pattern(-110, -20)
@@ -52,27 +53,30 @@ draw_pattern(-290,-85)
 draw_pattern(-290,-5)
 draw_pattern(-260,60)
 draw_pattern(-235,130)
+
 import turtle
 tur = turtle.Turtle()
+tur.speed(10)
 
 def draw_treepattern(level, branch_length):
-  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
-  if level > 0:
-    tur.forward(branch_length)
-    tur.left(40)
-    draw_treepattern(level-1, branch_length/1.61)
+    seasontheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
+    if level > 0:
+        tur.forward(branch_length)
+        tur.left(40)
+        draw_treepattern(level-1, branch_length/1.61)
 
-    tur.right(80)
-    draw_treepattern(level-1, branch_length/1.61)
-    
-    tur.left(40)
-    tur.back(branch_length)
-    
-  else:
-    tur.color(seasontheme[color])
-    tur.stamp()
-    tur.color("brown")
-    
+        tur.right(80)
+        draw_treepattern(level-1, branch_length/1.61)
+        
+        tur.left(40)
+        tur.back(branch_length)
+        
+    else:
+        tur.color(seasontheme[color])
+        tur.stamp()
+        tur.color("brown")
+        return 
+        
 def tree_location(x, y, length, depth):
     tur.penup()
     tur.goto(x, y)

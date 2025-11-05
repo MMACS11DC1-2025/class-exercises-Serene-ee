@@ -24,24 +24,24 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 
 ### **Core Programming Concepts**
 - [g ] At least one recursive function defined with proper parameters (2 pts)
-- [ ] Proper base case implemented to stop recursion (2 pts)
+- [g ] Proper base case implemented to stop recursion (2 pts)
 - [ ] Recursive calls reduce problem size toward base case (2 pts)
 - [ ] Function returns meaningful values (not just drawing) (2 pts)
 - [ ] At least one user input to dynamically generate graphics (2 pts)
 - [ ] Program prints the total count of recursive function calls executed (2 pts)
 
 ### **Data Structures & Organization**
-- [ ] Use a dictionary to store fractal settings (2 pts)
-- [ ] Dictionary keys clearly named and organized (2 pts)
-- [ ] Values include configuration, colors, or descriptions (2 pts)
+- [ g] Use a dictionary to store fractal settings (2 pts)
+- [g ] Dictionary keys clearly named and organized (2 pts)
+- [ g] Values include configuration, colors, or descriptions (2 pts)
 
 ### **Turtle Graphics Integration**
-- [ ] Proper turtle setup and configuration (2 pts)
-- [ ] Function actually draws visual patterns using turtle commands (2 pts)
-- [ ] Visual output demonstrates recursive concepts effectively (2 pts)
+- [g ] Proper turtle setup and configuration (2 pts)
+- [ g] Function actually draws visual patterns using turtle commands (2 pts)
+- [ g] Visual output demonstrates recursive concepts effectively (2 pts)
 
 ### **Code Quality**
-- [ ] Code is well-organized, readable, and follows Python naming conventions. (2 pts)
+- [ g] Code is well-organized, readable, and follows Python naming conventions. (2 pts)
 - [ ] Includes meaningful comments that explain the logic and steps taken in the code. (2 pts)
 
 ### **Documentation & Process**
