@@ -56,6 +56,7 @@ import turtle
 tur = turtle.Turtle()
 
 def draw_treepattern(level, branch_length):
+  seasontheme =	{"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
   if level > 0:
     tur.forward(branch_length)
     tur.left(40)
@@ -68,7 +69,7 @@ def draw_treepattern(level, branch_length):
     tur.back(branch_length)
     
   else:
-    tur.color("green")
+    tur.color(seasontheme[color])
     tur.stamp()
     tur.color("brown")
     
