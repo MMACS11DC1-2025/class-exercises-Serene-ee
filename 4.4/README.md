@@ -1,99 +1,64 @@
-'''
-This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like. After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the code will draw the trees with the picked color from the user at the bottom left and the bottom right.
-'''
-import turtle
-t = turtle.Turtle()
-t.speed(10)
+#--- Explaination and how to approch the program---
 
-start = input("Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!").lower().strip()
-
-if start == "start":
-    for i in range(70):
-        t.forward(5+i)
-        t.right(15)
-        
-t.goto(5)
-t.penup()
-turtle.done()
-
-color = input("It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)").lower().strip()
+This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like. After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the code will draw the trees with the picked color from the user at the bottom left and the bottom right. After that, the code will print out the total count of recursive function calls and when the user input 'finish', the program will clear the screen.
 
 
-def draw_pattern(x, y):
-    seasontheme =   {"orange":"#FFB533", "pink":"#FF73C3", "green":"#12C517", "blue":"#4CC9F0"}
-    t.color(seasontheme[color])
-    
-    t.penup()
-    t.goto(30 + x, 40 + y)
-    t.stamp()
-    
-    t.penup()
-    t.goto(60 + x, 10 + y)
-    t.stamp()
-    
-    t.penup()
-    t.goto(90 + x, 40 + y)
-    t.stamp()
+#--- Challanges, debugging, testing process, and test case ---
 
-draw_pattern(-80, -80)
-draw_pattern(-110, -20)
-draw_pattern(-15, 5)
-draw_pattern(15, -65)
-draw_pattern(-20, -140)
-draw_pattern(-140, -145)
-draw_pattern(-200, -55)
-draw_pattern(-170, 40)
-draw_pattern(-70,105)
-draw_pattern(45,70)
-draw_pattern(100,-5)
-draw_pattern(109,-80)
-draw_pattern(88,-160)
-draw_pattern(28,-215)
-draw_pattern(-80,-245)
-draw_pattern(-190,-215)
-draw_pattern(-260,-155)
-draw_pattern(-290,-85)
-draw_pattern(-290,-5)
-draw_pattern(-260,60)
-draw_pattern(-235,130)
+While developing this program, there were many challanges approached.
+- No ideas and directions on how to get started
+- Need to search up how to draw sprial
+- Didn't know how to count the recursive calls(recursive approach below)
 
-import turtle
-tur = turtle.Turtle()
-tur.speed(10)
+Debugging:
+- start = input(---) instead of print(---)/n start = input()
+- the tree's location: In order to make the tree perpendicular to the ground, I should use tur.setheading() instead of tur.right() or tur.left()
 
-treecolor = input("Lets add some trees for decoration. What color would You like the tree to be? (orange /pink/ green/ blue)").lower().strip()
+Testing process:
+- since the pattern needs to be fitted in the shell, I needed to call draw_pattern many times with different coordinates, so I spent a lot of time on adjusting and testing where the patterns should be to look the best.
+- for the trees, I wanted to put them in the shell at first, but I noticed that trees are too big to be put in the shell in a level of 5, so I just put them at bottom left and right as a decoration. And so the location of them also took me time to adjust, espeicaly on how to make them perpendicular to the ground.
+
+Test case:
+"Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!"
+input: start
+(expected: Draw out a shell)
+(actual: Draw out a shell)
+"It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)"
+input: orange
+(expected: Draw out orange coloured pattens in the shell)
+(actual: Draw out orange coloured pattens in the shell)
+"Lets add some trees for decoration. What color would You like the tree to be? (orange /pink/ green/ blue)"
+input: green
+(expected: Draw out two trees with green leaf)
+(actual: Draw out two trees with green leaf, one at the bottom left, one at the bottom right)
+"Total Recursive Calls Executed: 126. Please enter 'finish' to end."
+input: finish
+(expected: Code ended.)
+(actual: Cleared the drawing.)
 
 
-def draw_treepattern(level, branch_length):
-    treetheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
-    if level > 0:
-        tur.forward(branch_length)
-        tur.left(40)
-        draw_treepattern(level-1, branch_length/1.61)
+#--- Recursive approach ---
 
-        tur.right(80)
-        draw_treepattern(level-1, branch_length/1.61)
-        
-        tur.left(40)
-        tur.back(branch_length)
-        
-    else:
-        tur.color(treetheme[treecolor])
-        tur.stamp()
-        tur.color("brown")
-        return 
-        
-def tree_location(x, y, length, depth):
-    tur.penup()
-    tur.goto(x, y)
-    tur.setheading(90) 
-    tur.pendown()
+- For my recursive function(trees), I took the one in class materials as an example, where I changed some colors and variable names of it. The most important part, is the location of the trees, which I also spent more time on it. I added length, and depth, along with x and y, and I adjusted the numbers to put them where I want. While adjusting, I also overcomed the challange where I was struggling to make the trees perpendicular to the ground.
 
-    tur.color("brown")
-    tur.width(3)
-    tur.shape("triangle")
-    
-    draw_treepattern(depth, length)
 
-tree_location(-150, -330, 80, 5) 
-tree_location(150, -330, 80, 5)
+#--- How inputs affects outputs ---
+
+- In this program, there are 4 inputs required from the users:
+#1 "Hi user, I am a shell DIY bot, in this python, you will be able to create your custom shell! Enter 'start' to get started!"
+(For #1, there are no affects because it's just an interaction with users in order to get started.)
+
+#2 "It time to put in some patterns! What color would You like the patterns to be? (orange /pink/ green/ blue)"
+(For #2, the user's input would affect which color would the shell's pattern be in the drawing.)
+
+#3 "Lets add some trees for decoration. What color would You like the tree to be? (orange /pink/ green/ blue)"
+(for #3, the user's input would affect which color would the tree leaf be in the drawing.)
+
+#4 "Total Recursive Calls Executed: " + str(total_calls) + ". Please enter 'finish' to end."
+(For #4, the user's input would lead to clearing the screen at the end of the program.)
+
+
+
+#--- Reasonable recursion depth ---
+
+- For my recursion, I think 8 would be too high, because it will be too complex, and though animation will take a long time to draw it out. The depth 2 would be too low, because it's to simple and the drawing won't look like a tree.
