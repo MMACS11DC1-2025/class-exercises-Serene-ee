@@ -64,3 +64,22 @@ input: finish
 #--- Reasonable recursion depth ---
 
 - For my recursion, I think 8 would be too high, because it will be too complex, and though animation will take a long time to draw it out. The depth 2 would be too low, because it's to simple and the drawing won't look like a tree.
+
+
+#--- Peers review ---
+By Jayden Wong
+
+-VERY good! I like all the details and the user interface is amazing
+
+-I like how much you can customize it
+
+PROS
+-detailed comments describe the function very well
+-no errors in code
+-recursion accurately used 
+-beautiful patterns
+-code well organized
+-appropriate function names
+
+CONS
+-not much input validation, if i input a wrong color or other required element, code continues and gives me an error
