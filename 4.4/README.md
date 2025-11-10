@@ -1,7 +1,5 @@
 '''
-This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like.
-After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the
-code will draw the trees with the picked color from the user at the bottom left and the bottom right.
+This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like. After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the code will draw the trees with the picked color from the user at the bottom left and the bottom right.
 '''
 import turtle
 t = turtle.Turtle()

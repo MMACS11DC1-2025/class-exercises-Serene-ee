@@ -67,42 +67,34 @@ draw_pattern(-235,130)
 
 import turtle
 tur = turtle.Turtle()
-
-# draw the graphics out more efficiently 
 tur.speed(10)
 
-# ask user for the color of the trees
 treecolor = input("Lets add some trees for decoration. What color would You like the tree to be? (orange /pink/ green/ blue)").lower().strip()
 
-# set up trees
 def draw_treepattern(level, branch_length):
-
-    # dictionary for the colors for trees
     treetheme =   {"orange":"#FFB533", "pink":"#FCB3F5", "green":"#12C517", "blue":"#BFF5F5"}
 
-    # as long as not at the leaf level
-    if level > 0:
-
-        #draw branch
-        tur.forward(branch_length)
-        tur.left(40)
-        draw_treepattern(level-1, branch_length/1.61)
-
-        tur.right(80)
-        draw_treepattern(level-1, branch_length/1.61)
-        
-        tur.left(40)
-        tur.back(branch_length)
-
-    # if at the leaf level 0    
-    else:
-        #stamp the leaf with the color the user picks
+    if level <= 0:
         tur.color(treetheme[treecolor])
         tur.stamp()
         tur.color("brown")
-        return 
+        return 1 
+    
+    else:
+        current_calls = 1 
+        
+        tur.forward(branch_length)
+        tur.left(40)
+        current_calls += draw_treepattern(level-1, branch_length/1.61) 
 
-# set up location of where the trees should be         
+        tur.right(80)
+        current_calls += draw_treepattern(level-1, branch_length/1.61)
+        
+        tur.left(40)
+        tur.back(branch_length)
+        
+        return current_calls
+
 def tree_location(x, y, length, depth):
     tur.penup()
     tur.goto(x, y)
@@ -113,10 +105,15 @@ def tree_location(x, y, length, depth):
     tur.width(3)
     tur.shape("triangle")
     
-    draw_treepattern(depth, length)
+    return draw_treepattern(depth, length)
 
-# draw the tree at bottom left
-tree_location(-150, -330, 80, 5) 
+count1 = tree_location(-150, -330, 80, 5) 
 
-# draw the tree at bottom right
-tree_location(150, -330, 80, 5)
+count2 = tree_location(150, -330, 80, 5)
+
+total_calls = count1 + count2
+calls = input("Total Recursive Calls Executed: " + str(total_calls) + ". Please enter 'finish' to end.")
+
+if calls == "finish":
+  t.clear()
+  tur.clear()

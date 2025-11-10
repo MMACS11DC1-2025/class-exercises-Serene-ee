@@ -26,7 +26,7 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 - [g ] At least one recursive function defined with proper parameters (2 pts)
 - [g ] Proper base case implemented to stop recursion (2 pts)
 - [g ] Recursive calls reduce problem size toward base case (2 pts)
-- [ ] Function returns meaningful values (not just drawing) (2 pts)
+- [ g] Function returns meaningful values (not just drawing) (2 pts)
 - [g ] At least one user input to dynamically generate graphics (2 pts)
 - [ ] Program prints the total count of recursive function calls executed (2 pts)
 
@@ -45,7 +45,7 @@ You'll create a fractal generator that can draw at least one recursive pattern (
 - [ ] Includes meaningful comments that explain the logic and steps taken in the code. (2 pts)
 
 ### **Documentation & Process**
-- [ ] README.md file with project documentation explaining the approach used and how to use the program (2 pts)
+- [g ] README.md file with project documentation explaining the approach used and how to use the program (2 pts)
 - [ ] Code must be well commented to enhance readability (2 pts)
 - [ ] Test cases with expected vs actual results (2 pts)
 - [ ] Screenshots of visual outputs for each test case (2 pts)
