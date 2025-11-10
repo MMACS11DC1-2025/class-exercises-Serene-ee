@@ -1,3 +1,5 @@
+*** I made this program based on python Sandbox, so please run this code in python Sandbox, since other platform might have different results, Thank you.**
+
 #--- Explaination and how to approch the program---
 
 This code will generate a graphic drawing like a shell, and the user will 'DIY' the shell by picking the color of the pattern they like. After putting on the color pattern on the shell, the code will ask what color would the user like on some trees as a decoration. So the code will draw the trees with the picked color from the user at the bottom left and the bottom right. After that, the code will print out the total count of recursive function calls and when the user input 'finish', the program will clear the screen.
