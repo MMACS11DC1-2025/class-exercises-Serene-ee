@@ -1,4 +1,4 @@
-*** I made this program based on python Sandbox, so please run this code in python Sandbox, since other platform might have different results, Thank you.**
+*** I made this program on python Sandbox, so please run this code in python Sandbox, since other platform might have different results, Thank you.**
 
 #--- Explaination and how to approch the program---
 
