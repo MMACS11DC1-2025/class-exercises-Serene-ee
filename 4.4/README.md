@@ -41,7 +41,10 @@ input: finish
 
 #--- Recursive approach ---
 
-- For my recursive function(trees), I took the one in class materials as an example, where I changed some colors and variable names of it. The most important part, is the location of the trees, which I also spent more time on it. I added length, and depth, along with x and y, and I adjusted the numbers to put them where I want. While adjusting, I also overcomed the challange where I was struggling to make the trees perpendicular to the ground.
+- For my recursive function(trees), I took the one in class materials as an example, where I changed some colors and variable names of it.
+The most important part, is the location of the trees, which I also spent more time on it. I added length, and depth, along with x and y, 
+and I adjusted the numbers to put them where I want. While adjusting, I also overcomed the challange where I was struggling to make the
+trees perpendicular to the ground.
 
 
 #--- How inputs affects outputs ---
