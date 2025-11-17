@@ -1,3 +1,4 @@
+''''
 from PIL import Image
 import coolcolours
 
@@ -20,5 +21,12 @@ for i in range(width):
             image_output.putpixel((i, j), beach_color)
 
 image_output.save("output.png", "png")
+'''
 
+def is_light(r, g, b):
+    pixel = ()
+    if pixel >= 128:
+        return True
+    elif pixel < 128:
+        return False
 
