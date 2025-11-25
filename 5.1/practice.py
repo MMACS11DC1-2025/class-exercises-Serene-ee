@@ -92,7 +92,7 @@ percent_green = 100*green_pixels/(width*height)
 percent_blue = 100*blue_pixels/(width*height)
 percent_purple = 100*purple_pixels/(width*height)
 
-report = "There are {:.2f} percent yellow jellybeans.".format(percent_yellow)
+report = "There are {:.2f} percent yellow jellybeans.".format(percent_yellow) + "There are {:.2f} percent red jellybeans.".format(percent_red) + "There are {:.2f} percent green jellybeans.".format(percent_green) + "There are {:.2f} percent blue jellybeans.".format(percent_blue) + "There are {:.2f} percent purple jellybeans.".format(percent_purple)
 print(report)
 
 #file.save("output.png", "png")
