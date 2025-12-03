@@ -23,4 +23,6 @@ for i in range(len(drake_data)):
 	
 	drake_data[smallest_index], drake_data[i] = drake_data[i], drake_data[smallest_index]
 
-print(drake_data)
+top5 = drake_data[:5]
+for item in top5:
+	print(str(item[0]) + "\t\t" + item[1] + " by " + item[2])
