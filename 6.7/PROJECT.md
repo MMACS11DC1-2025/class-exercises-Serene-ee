@@ -48,15 +48,15 @@ Using the new skills in units 5 and 6, you will implement a computer vision algo
 
 ## **QUALITY CRITERIA**
 ### Code Quality and Efficiency
-- [ ] Code quality: Clean, readable structure (2 pts)
+- [g] Code quality: Clean, readable structure (2 pts)
 - [ ] Efficiency: Evidence of thinking about algorithmic complexity throughout the code (2 pts)
 - [ ] The program handles potential errors and edge cases effectively (2 pts)
 - [ ] Documentation polish: README is clear, concise, free of typos; also, code comments explain why decisions were made. (1 pt)
 
 ### Creativity and Originality
-- [ ] The chosen theme and visual feature are unique, interesting, and insightful (2 pts)
+- [g] The chosen theme and visual feature are unique, interesting, and insightful (2 pts)
 - [ ] Feature detection uses a more advanced process, such as pre-processing the image, using multiple pixels, or using statistical approaches to detect features (4 points)
-- [ ] Captured feature involves a real-world use-case. References a real paper, report, or dataset supporting decisions for detecting feature (4 points)
+- [g] Captured feature involves a real-world use-case. References a real paper, report, or dataset supporting decisions for detecting feature (4 points)
 
 ## **SUBMISSION REQUIREMENTS**
 

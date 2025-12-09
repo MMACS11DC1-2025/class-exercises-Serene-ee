@@ -8,6 +8,7 @@ files = ["6.7/yellowfish1.webp", "6.7/yellowfish2.webp", "6.7/yellowfish3.jpg", 
          "6.7/redfish1.jpg", "6.7/belugawhale.jpg", "6.7/eagleray.jpg", "6.7/killerwhale.webp", "6.7/pufferfish.webp"]
 
 for imgs in files:
+    all_imgspercent = []
     file = Image.open(imgs)
     loadedFile = file.load()
 
@@ -28,6 +29,8 @@ for imgs in files:
                 yellow_pixels += 1   
 
     percent_yellow = 100*yellow_pixels/(width*height)
+
+    all_imgspercent += percent_yellow
 
     report = "There are {:.2f} percent colour yellow in this image.".format(percent_yellow)
     print(report)
