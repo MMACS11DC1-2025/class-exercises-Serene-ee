@@ -7,8 +7,8 @@ t1 = time.time()
 files = ["6.7/yellowfish1.webp", "6.7/yellowfish2.webp", "6.7/yellowfish3.jpg", "6.7/yellowfish4.jpeg", "6.7/yellowfish5.jpg", "6.7/yellowfish6.jpg", 
          "6.7/redfish1.jpg", "6.7/belugawhale.jpg", "6.7/eagleray.jpg", "6.7/killerwhale.webp", "6.7/pufferfish.webp"]
 
+all_imgspercent = []
 for imgs in files:
-    all_imgspercent = []
     file = Image.open(imgs)
     loadedFile = file.load()
 
@@ -24,16 +24,17 @@ for imgs in files:
             g = loadedFile[x, y][1]
             b = loadedFile[x, y][2]
             
-            #yellow
+            #yellow(function)
             if r > 150 and g > 150 and b < 100:
                 yellow_pixels += 1   
 
     percent_yellow = 100*yellow_pixels/(width*height)
 
-    all_imgspercent += percent_yellow
+    all_imgspercent += [percent_yellow]
 
-    report = "There are {:.2f} percent colour yellow in this image.".format(percent_yellow)
-    print(report)
+top5 = all_imgspercent[:5]
+for item in top5:
+	print("There are {:.2f} percent colour yellow in this image.".format(float(item)))
 t2 = time.time()
 
 image_open_load = t1-t0
