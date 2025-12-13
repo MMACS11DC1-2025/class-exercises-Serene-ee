@@ -117,9 +117,9 @@ print("\n### Top 5 Highest Yellow Percentage Images (Sorted 5th place to 1st pla
 for score, filename in top5_highest:
     # Print the filename and the score
     output = "File: {}".format(filename)
-    space = \t
+    tab = '\t'
     percentages = "Yellow Percentage: {:.2f}%".format(float(score))
-    print(output,space, percentages)
+    print(output, tab, percentages)
 t2 = time.time()
 
 image_open_load = t1-t0
