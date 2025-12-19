@@ -49,7 +49,6 @@ for i in range(len(file_scores)):
             largest_index = j
             file_scores[i], file_scores[largest_index] = file_scores[largest_index], file_scores[i]
 
-
 # Select the top 5 highest percentages (the first 5 elements of the sorted list)
 top5_highest = file_scores[:5]
 
@@ -76,17 +75,25 @@ entire = t2-t0
 timings = "\nIt took {:.3f}s to load the image, and {:.3f}s to do the loop. All in all it took {:.3f}s.".format(image_open_load, loop, entire)
 print(timings)
 
-print("Pick a sea creature to see how many yellow percentage is in it's image.(belugawhale/eagleray/pufferfish)")
+print("Pick a sea creature to see how many yellow percentage is in it's image.(redfish/killerwhale/pufferfish)")
 fish = input().lower().strip()
+if fish == "pufferfish":
+    fish == file_scores[7][0]
+elif fish == "killerwhale":
+    fish == file_scores[8][0]
+elif fish == "redfish":
+    fish == file_scores[6][0]
+else:
+    print("Sorry, your input is unrecognizable.")
 
-def fishes(percent, filename):
+def fishes(listoflist, percent):
     first = 0
     last = len(percent)-1
     while first <= last:
         mid = int((first + last)/2)
-        if filename == percent[mid][0]:
+        if listoflist[mid][0] == percent:
             return percent[mid][1]
-        elif percent[mid][0] < filename:
+        elif listoflist[mid][0] < percent:
             first = mid + 1
         else:
             last = mid - 1
