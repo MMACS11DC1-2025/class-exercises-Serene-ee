@@ -15,8 +15,8 @@ Using the new skills in units 5 and 6, you will implement a computer vision algo
 > *These items belong at the very top of your `README.md`. They give the context for everything else you do.*
 
 - [g] Choose a specific theme for which you will be scanning multiple images (3 pts)
-- [l ] Clearly define the visual feature your program will detect and count (2 pts)
-- [l ] Justify your feature detection with an explanation of how your chosen feature can be accurately identified (3 pts)
+- [g] Clearly define the visual feature your program will detect and count (2 pts)
+- [g] Justify your feature detection with an explanation of how your chosen feature can be accurately identified (3 pts)
 
 ### Image Processing and Feature Extraction (Unit 5)
 #### Task 1: Pixels to Data Function
@@ -33,29 +33,29 @@ Using the new skills in units 5 and 6, you will implement a computer vision algo
 - [g] Implement the Selection Sort algorithm function yourself (not using built-in libraries for sorting) to sort the master list based on the calculated Feature Density Score (highest to lowest) (12 pts)
 - [g] Output the top 5 results using list slicing (3 pts)
 #### Task 5: Binary Search
-- [?] Implement the Binary Search algorithm function yourself to search the sorted list for a specific target score (10 pts)
+- [g] Implement the Binary Search algorithm function yourself to search the sorted list for a specific target score (10 pts)
 
 ### Process
-- [l ] Algorithm design in English: outline the logic using English comments (pseudocode) before each major Python code block (3 pts)
-- [ l] Code clarity: use descriptive variable names unless they are standard loop indices (e.g. x, y) (2 pts)
-- [ l] Use of functions: structure the program using functions to organize it and reduce code duplication (2 pts)
+- [g] Algorithm design in English: outline the logic using English comments (pseudocode) before each major Python code block (3 pts)
+- [g] Code clarity: use descriptive variable names unless they are standard loop indices (e.g. x, y) (2 pts)
+- [g] Use of functions: structure the program using functions to organize it and reduce code duplication (2 pts)
 - [ l] Testing and robustness: include a section in your README describing testing done to ensure each of the tasks works as intended (1 pt)
 - [ l] Performance analysis: include a section in your README describing your code profiling: give an example of the report and discuss what parts of the program take the longest
 - [ l] Challenges faced: include a section in your README describing at least one challenge faced and how you overcame it (2 pts)
 
 ### Version Control
-- [l ] Source code is committed to repository on Github with at least 5 meaningful commits on different days prior to deadline (10 pts)
+- [g] Source code is committed to repository on Github with at least 5 meaningful commits on different days prior to deadline (10 pts)
 
 ## **QUALITY CRITERIA**
 ### Code Quality and Efficiency
 - [g] Code quality: Clean, readable structure (2 pts)
 - [l ] Efficiency: Evidence of thinking about algorithmic complexity throughout the code (2 pts)
-- [ l] The program handles potential errors and edge cases effectively (2 pts)
+- [g] The program handles potential errors and edge cases effectively (2 pts)
 - [l ] Documentation polish: README is clear, concise, free of typos; also, code comments explain why decisions were made. (1 pt)
 
 ### Creativity and Originality
 - [g] The chosen theme and visual feature are unique, interesting, and insightful (2 pts)
-- [l] Feature detection uses a more advanced process, such as pre-processing the image, using multiple pixels, or using statistical approaches to detect features (4 points)
+- [g] Feature detection uses a more advanced process, such as pre-processing the image, using multiple pixels, or using statistical approaches to detect features (4 points)
 - [g] Captured feature involves a real-world use-case. References a real paper, report, or dataset supporting decisions for detecting feature (4 points)
 
 ## **SUBMISSION REQUIREMENTS**
