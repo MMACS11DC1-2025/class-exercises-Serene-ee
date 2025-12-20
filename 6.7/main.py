@@ -52,7 +52,7 @@ for i in range(len(file_scores)):
 # Select the top 5 highest percentages (the first 5 elements of the sorted list)
 top5_highest = file_scores[:5]
 
-print("\n---Top 5 Highest Yellow Percentage Images (Sorted 5th place to 1st place)---")
+print("\n---Top 5 Highest Yellow Percentage Images (Sorted 1st place to 5th place)---")
 for score, filename in top5_highest:
     # Print the filename and the score
     output = "File: {}".format(filename)
@@ -75,28 +75,32 @@ entire = t2-t0
 timings = "\nIt took {:.3f}s to load the image, and {:.3f}s to do the loop. All in all it took {:.3f}s.".format(image_open_load, loop, entire)
 print(timings)
 
-print("Pick a sea creature to see how many yellow percentage is in it's image.(redfish/killerwhale/pufferfish)")
+print("Pick a sea creature to see how many yellow percentage is in it's image.(redfish/yellowfish/pufferfish)")
 fish = input().lower().strip()
+
 if fish == "pufferfish":
-    fish == file_scores[7][0]
-elif fish == "killerwhale":
-    fish == file_scores[8][0]
+    target_score = file_scores[7][0]
+elif fish == "yellowfish":
+    target_score = file_scores[5][0]
 elif fish == "redfish":
-    fish == file_scores[6][0]
+    target_score = file_scores[6][0]
 else:
+    target_score = 0
     print("Sorry, your input is unrecognizable.")
 
-def fishes(listoflist, percent):
+def fishes(listoflist, target):
+    if target_score == 0:
+        return - 1
     first = 0
-    last = len(percent)-1
+    last = len(listoflist)-1
     while first <= last:
         mid = int((first + last)/2)
-        if listoflist[mid][0] == percent:
-            return percent[mid][1]
-        elif listoflist[mid][0] < percent:
+        if listoflist[mid][0] == target:
+            return listoflist[mid][0]
+        elif listoflist[mid][0] > target:
             first = mid + 1
         else:
             last = mid - 1
     return - 1
 
-print(fishes(file_scores, fish))
+print("This sea creature's image contains " + str(fishes(file_scores, target_score)) + " percent of the color yellow.")
