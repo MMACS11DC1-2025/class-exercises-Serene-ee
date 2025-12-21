@@ -45,6 +45,7 @@ for imgs in files:
 
     # Store the percentage and the filename together
     file_scores.append((percent_yellow, imgs)) 
+t2 = time.time()
 
 # Selection sort - sort the files and percentage from highest to lowest percent of yellow images
 for i in range(len(file_scores)):
@@ -60,6 +61,7 @@ for i in range(len(file_scores)):
 
             # Swap with the first element
             file_scores[i], file_scores[largest_index] = file_scores[largest_index], file_scores[i]
+t3 = time.time()
 
 # Select the top 5 highest percentages (the first 5 elements of the sorted list)
 top5_highest = file_scores[:5]
@@ -81,15 +83,15 @@ for score, filename in file_scores:
         print(outputs)
 
 # Track the time it takes to do all of these
-t2 = time.time()
+t3 = time.time()
 
 # Calculate the time it takes for each part
 image_open_load = t1-t0
 loop = t2-t1
-entire = t2-t0
+entire = t3-t0
 
 # Display the times out
-timings = "\nIt took {:.3f}s to load the image, and {:.3f}s to do the loop. All in all it took {:.3f}s.".format(image_open_load, loop, entire)
+timings = "\nIt took {:.3f}s to load the image, {:.3f}s to go through all the image and calculate percentage for each image. All in all it took {:.3f}s.".format(image_open_load, loop, entire)
 print(timings)
 
 # User interaction - ask user to pick a sea creature
